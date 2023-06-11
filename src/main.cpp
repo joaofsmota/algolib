@@ -22,12 +22,15 @@ int main(int argc, char** argv)
 			llist::llCmd<s32>::insert_front(targetList, i);
 
 		llist::llCmd<s32>::iterator it = llist::llCmd<s32>::begin(targetList);
-		++it;
-		s32 val = *it;
+		for (size_t i = 0; i < 3; ++i)
+		{
+			s32 val = *it;
+			Print(val);
+			++it; 
+		}
 
 		llist::llCmd<s32>::iterator end = llist::llCmd<s32>::end(targetList);
-
-
+	
 
 		sb_tree::sb_tree_t<r32> treef32 = {}; 
 
@@ -38,6 +41,7 @@ int main(int argc, char** argv)
 
 		sb_tree::sbstCmd<r32>::remove(treef32, 2.313f);
 
+		
 		
 	}
 	clock_t end = clock();

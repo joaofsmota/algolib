@@ -5,12 +5,11 @@ cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
 add_executable (algolib  
-main.cpp 
+"main.cpp" 
 
-algo/algo.h 
 "algo/memory/arena_memory.h" 
-algo/utils.h
-algo/debug.h 
+"algo/utils.h"
+"algo/debug.h" 
 
 "algo/container/node.h" 
 "algo/container/sbst.h" "algo/container/llist.h")
